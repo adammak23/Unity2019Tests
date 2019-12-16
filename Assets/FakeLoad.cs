@@ -14,6 +14,7 @@ public class FakeLoad : MonoBehaviour
     public Transform ParticleSpawnPoint;
     public Vector3 ParticleSpawnExtent;
     public bool AllowRemoveCargo = true;
+    public Rigidbody rb;
 
     float loadCounter = 0;
     //float secondaryLoadCounter = 0;
@@ -69,6 +70,10 @@ public class FakeLoad : MonoBehaviour
             loadCounter = debugLoad;
             //secondaryLoadCounter = debugLoad;
         }
+        else
+        {
+            debugLoad = MaxLoad;
+        }
     }
 
     public void RemoveCargo(float amount)
@@ -87,6 +92,9 @@ public class FakeLoad : MonoBehaviour
                 SpawnPosition = ParticleSpawnPoint.position + Vector3.Scale(Random.insideUnitSphere, ParticleSpawnExtent);
 
                 GameObject particle = Instantiate(BuildingParticlePrefab, SpawnPosition, Random.rotation);
+                Rigidbody particleRb = particle.GetComponent<Rigidbody>();
+                particleRb.velocity = rb.velocity;
+                particleRb.angularVelocity = rb.angularVelocity;
                 //particle.GetComponent<VoxelandCollider>().brush.extent = (int)Mathf.Lerp(1, 4, debugLoad / MaxLoad);
                 loadCounter = debugLoad;
             }

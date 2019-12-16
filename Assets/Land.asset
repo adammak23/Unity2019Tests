@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Land
-  m_Shader: {fileID: 4800000, guid: e23a4e25ba965f149b0a045cea929181, type: 3}
-  m_ShaderKeywords: _TEX2DARRAY _TRIPLANAR
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _NORMALMAP _TEX2DARRAY _TRIPLANAR
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 50855a3ab834c5c4f99a0cce12cb4ebd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -103,6 +107,22 @@ Material:
         m_Texture: {fileID: 18700000, guid: 32c7acfcdd7561bf707eb1a479a34b69, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
     - _HorizonHeightmap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -114,6 +134,10 @@ Material:
     - _HorizonVisibilityMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 6cf3baf421afb8f45a21891e9d7b482a, type: 3}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _MainTex0:
         m_Texture: {fileID: 0}
@@ -199,14 +223,33 @@ Material:
         m_Texture: {fileID: 18700000, guid: a20f8fe0a426416429baef0749634111, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AmbientOcclusion: 7
     - _BlendCrisp: 2
     - _BlendMapFactor: 3
+    - _BumpScale: -2
     - _Culling: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
     - _FarEnd: 100
     - _FarStart: 10
     - _FarTile: 0.01
+    - _GlossMapScale: 1
+    - _Glossiness: 0.1
+    - _GlossyReflections: 1
     - _Height0: 1
     - _Height1: 1
     - _Height10: 1
@@ -233,10 +276,21 @@ Material:
     - _Height9: 1
     - _HorizonBorderLower: 2
     - _HorizonHeightScale: 200
+    - _Metallic: 0
     - _Mips: -0.1
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
     - _PreviewType: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
     - _Tile: 0.1
+    - _UVSec: 0
+    - _ZWrite: 1
     m_Colors:
+    - _Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HorizonColorTint: {r: 0, g: 0, b: 0, a: 0}
     - _SpecParams0: {r: 0, g: 0, b: 0, a: 0}
     - _SpecParams1: {r: 0, g: 0, b: 0, a: 0}

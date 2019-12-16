@@ -26,6 +26,11 @@ public class TerrainRaycaster : MonoBehaviour
     RaycastHit hit;
     Vector3 direction;
 
+    public void Destroy()
+    {
+        Destroy(this.gameObject);
+    }
+
     void OnEnable()
     {
         StartCoroutine(RaycastGround());

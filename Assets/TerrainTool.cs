@@ -267,7 +267,7 @@ public class TerrainTool : MonoBehaviour
     {
         if (targetTerrain)
         {
-            return targetTerrain.terrainData.GetHeights(0, 0, targetTerrain.terrainData.heightmapWidth, targetTerrain.terrainData.heightmapHeight);
+            return targetTerrain.terrainData.GetHeights(0, 0, targetTerrain.terrainData.heightmapResolution, targetTerrain.terrainData.heightmapResolution);
         }
 
         return default(float[,]);
@@ -277,7 +277,7 @@ public class TerrainTool : MonoBehaviour
     {
         if (targetTerrain)
         {
-            return targetTerrain.terrainData.heightmapWidth;
+            return targetTerrain.terrainData.heightmapResolution;
         }
 
         return 0;
@@ -287,7 +287,7 @@ public class TerrainTool : MonoBehaviour
     {
         if (targetTerrain)
         {
-            return targetTerrain.terrainData.heightmapHeight;
+            return targetTerrain.terrainData.heightmapResolution;
         }
 
         return 0;
