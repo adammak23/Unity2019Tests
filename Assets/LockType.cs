@@ -1,0 +1,1 @@
+﻿public enum LockType { positive, negative, both };
